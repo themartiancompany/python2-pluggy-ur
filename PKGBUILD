@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: AGPL-3.0
+#
+# Maintainer:  Truocolo <truocolo@aol.com>
+# Maintainer:  Pellegrino Prevete <cGVsbGVncmlub3ByZXZldGVAZ21haWwuY29tCg== | base -d>
 # Maintainer: Danilo J. S. Bellini <danilo dot bellini at gmail dot com>
 # Contributor: Felix Yan <felixonmars@archlinux.org>
 pkgname=python2-pluggy
@@ -24,3 +28,5 @@ package() {
     python2 setup.py install --root="$pkgdir" --optimize=1 --skip-build
   install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE.txt"
 }
+
+# vim:set sw=2 sts=-1 et:
